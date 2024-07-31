@@ -17,8 +17,12 @@
         >
           Guess <span class="text-red-600">Game</span>
         </h1>
+        <h1 class="text-red-600 font-medium text-xl my-4">
+          Let&apos;s 🥳<span class="text-green-600">play</span> and
+          <span class="text-green-600">fun 😂</span>
+        </h1>
         <div class="flex flex-col items-center mt-16 gap-y-3">
-          <h1 class="text-3xl">
+          <h1 id="display" class="text-3xl">
             <lord-icon
               src="https://cdn.lordicon.com/mlxonlmo.json"
               trigger="loop"
@@ -28,11 +32,11 @@
             >
             </lord-icon>
           </h1>
-          <h1 class="text-xl text-green-500">You are too low</h1>
+          <h1 id="hi-lo" class="text-xl text-green-500">Tyr Your Luck 👍</h1>
         </div>
         <div class="flex flex-col items-center mt-12 gap-y-2">
-          <h1 class="text-red-600 text-xl">Random Number : 0</h1>
-          <h1 class="text-green-600 text-xl">You choose : 0</h1>
+          <h1 id="random" class="text-red-600 text-xl">Random Number : 0</h1>
+          <h1 id="my" class="text-green-600 text-xl">You choose : 0</h1>
         </div>
         <div class="flex items-center gap-x-5 my-8">
           <button
@@ -98,18 +102,15 @@
         </div>
         <div class="mb-16 mt-5 flex items-center gap-x-5">
           <button
+            id="answer"
             class="bg-green-500 shadow-md hover:bg-green-400 text-white px-5 py-2 font-medium text-xl rounded-lg"
           >
-            Try luck
-          </button>
-          <button
-            class="bg-green-500 shadow-md hover:bg-green-400 text-white px-5 py-2 font-medium text-xl rounded-lg"
-          >
-            See answer
+            Guess Number
           </button>
         </div>
       </div>
     </div>
     <script src="https://cdn.lordicon.com/lordicon.js"></script>
+    <script src="./src/main.ts"></script>
   </body>
 </html>
